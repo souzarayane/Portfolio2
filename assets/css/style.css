@@ -1,0 +1,353 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+/* Menu Mobile */
+/*
+.container-mobile{
+    overflow:hidden;
+}
+*/
+.navbar {
+    position: relative;
+}
+
+.links {
+    display: none;
+}
+
+.heading a:nth-child(2) {
+    color: green;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    padding: 7px;
+    margin-left: 150px;
+}
+
+.heading a i {
+    color: #ccc;
+    padding: 10px;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.heading a i:hover {
+    background-color: #212528;
+    color: rgb(255, 255, 255);
+}
+
+.links a {
+    color: #ccc;
+    padding: 5px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    text-align: center;
+    border-bottom: 1px solid white;
+}
+
+.links a:hover {
+    background-color: #949393;
+    color: white;
+}
+
+/* Nav */
+nav{
+    background-color: #212528;
+}
+
+nav .logo > img{
+    width: 45%;
+    margin-top: 15px;
+}
+
+nav .container-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav #nav-bar > ul{
+    display: flex;
+}
+
+nav #nav-bar > ul > li{
+    margin-right: 20px;
+    list-style: none;
+}
+
+nav #nav-bar > ul > li > a{
+    text-decoration: none;
+    color: #ccc;
+    font-size: 18px;
+}
+
+nav #nav-bar > ul > li > a:hover{
+    text-decoration: underline;
+    font-weight: 500;
+}
+/* Main */
+main #banner{
+    height: 100vh;
+    background-image: url('/assets/img/geometrico.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+main .legenda{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+main .legenda > h1{
+    color: #444;
+    font-size: 3rem;
+}
+
+main .legenda > p{
+    color: #949393;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+main .social{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+}
+
+main .social a{
+    color: #444;
+}
+
+main .social i{
+    font-size: 26px;
+}
+
+#email:hover{
+    color: #949393;
+}
+
+#github:hover{
+    color: #000;
+}
+
+#linkedin:hover{
+    color: #149be0;
+}
+
+/* Sobre */
+#sobre{
+    background-color: #f9f9f9;
+    height: 100vh;
+    position: relative;
+}
+
+#sobre .container-sobre{
+    display: flex;
+    width: 1530px;
+    margin: 0 auto;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+#sobre .titulo{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#sobre .titulo h2{
+    text-align: center;
+    color: #444;
+    font-size: 2rem;
+}
+
+#sobre .txt{
+    width: 50%;
+}
+
+#sobre .txt > p{
+    width: 535px;
+    font-size: 18px;
+    margin-left: 60px;
+    line-height: 1.7;
+}
+
+#sobre .avatar{
+    width: 50%;
+    padding-left: 120px;
+}
+/* Tecnologias */
+#tecnologias{
+    height: 100vh;
+    background-color: #212528;
+    position: relative;
+}
+
+#tecnologias .titulo-tech > h3{
+    text-align: center;
+    font-size: 2rem;
+    color: #ccc;
+    padding-top: 60px;
+}
+
+#tecnologias .container-tech{
+    width: 1530px;
+    margin: 0 auto;
+    display: grid;
+    height: 400px;
+    align-content: center;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+#tecnologias .container-tech > div{
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+#tecnologias .tech-box > i{
+    font-size: 80px;
+    color: #444;
+}
+
+#tecnologias .tech-box > h4{
+    font-size: 24px;
+    color: #444;
+}
+
+#tecnologias .tech-box i, .tech-box h4 {
+    transition: .5s;
+}
+
+#html-color:hover > i {
+    color: #ff4c1e;
+}
+
+#css-color:hover > i {
+    color: #149be0;
+}
+
+#js-color:hover > i {
+    color: #ffdc42;
+}
+
+#bootstrap-color:hover > i {
+    color: #7711f1;
+}
+
+#nodejs-color:hover > i {
+    color: #6da46b;
+}
+/* Projetos */
+#projetos{
+    height: 110vh;
+    background-color: #f9f9f9;
+}
+
+#projetos .titulo-project > h3{
+    font-size: 2rem;
+    color: #444;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#projetos .container-project{
+    width: 1530px;
+    margin: 0 auto;
+    display: grid;
+    height: 810px;
+    align-content: center;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    padding: 10px;
+}
+
+#projetos .container-project > div{
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+#projetos .project-box > img{
+    width: 500px;
+    height: 260px;
+}
+
+#projetos .project-box > h4{
+    font-size: 1.5rem;
+    color: #444;
+}
+
+#projetos .project-box > p{
+    font-size: 18px;
+    width: 400px;
+    margin: auto;
+}
+/* Footer */
+footer{
+    background-color: #212528;
+    position: absolute;
+    width: 100%;
+    height: 100px;    
+    text-align: center;
+    line-height: 100px;
+}
+footer p{
+    color: #ccc;
+}
+
+/* Responsivo para Tablet */
+@media(max-width: 768px) {
+    main #banner{
+        height: 70vh;
+        width: 70vw;
+        background-image: url('/assets/img/geometrico.jpg');
+        background-position: center;
+        background-size: cover;
+        position: relative;
+    }
+    main .legenda > h1{
+        color: #444;
+        font-size: 2rem;
+    }
+    main .legenda > p{
+        color: #949393;
+        font-size: 1rem;
+        font-weight: 300;
+    }
+    main .social i{
+        font-size: 16px;
+    }
+
+}
